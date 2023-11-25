@@ -1,0 +1,283 @@
+:root 
+{
+/* shopify navbar shades */
+    --nav-shade-50: #656266;
+    --nav-shade-100: #616161;
+    --nav-shade-200: #322F33;
+    --nav-shade-300: #1C181D;
+
+/* Font Color */
+    --font-light: #E3E3E3;
+    --font-mid: #616161;
+    --font-dark: #475467;
+
+/* Strokes Color */
+    --stroke-50: #EBEBEB;
+    --stroke-100: #00000066;
+    --stroke-200: #FFFFFF/20%;
+
+/* States */
+    --hover: #F7F7F7;
+    --pressed: #F0F0F0;
+    --focused: #005BD3;
+
+/* Background Color */
+    --white: #FFFFFF;
+    --background: #F1F1F1;
+
+}
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body-container {
+    background-color: var(--background);
+    max-width: 1440px;
+    height: 900px;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+    color: #005BD3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav, .container, .merchant-notification, .merchant-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    height: 60px;
+    background: #1A1A1A;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+}
+
+input.searchInput {
+    width: 480px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #616161;
+    font-size: 13px;
+    border-radius: 5px;
+    background-image: transparent url('https://crushingit.tech/hackathon-assets/icon-search.svg') no-repeat left center;
+    background-position-x: 5px;
+    background-color: #303030;
+    color: #B5B5B5;
+}
+
+.merchant-notification {
+    gap: 8px;
+    height: 32px;
+}
+
+.notification-bell {
+    width: 32px;
+    padding: 6px;
+    border-radius: 8px;
+    color: var(--font-light);
+    background: #303030;
+    color: var(--font-light);
+}
+
+.merchant-name {
+    padding: 2px 2px 2px 8px;
+    color: var(--font-light);
+    background: #303030;
+    gap: 8px;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.merchant-name-abbr {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: #36FBA1;
+    color: #00000066;
+}
+
+.merchant-name-abbr > p {
+    text-align: center;
+    margin: 7px 0px;
+}
+
+.setup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.select-a-plan {
+    background: #1A1A1A;
+    padding: 12px 8px 12px 16px;
+    border-radius: 8px;
+}
+
+.button-close button {
+    padding: 6px 12px;
+    background: var(--white);
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+#plan-text {
+    font-weight: 500;
+    color: var(--font-light);
+}
+
+.setup-guide {
+    background-color: var(--white);
+    border-radius: 18px;
+    padding: 16px;
+    border: 1px solid #DBDBDB;
+}
+
+.setup-guide .container {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.setup-guide-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.setup-guide-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.setup-guide-top-para {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.setup-guide-top-para .header-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.setup-guide-top-para .header-description {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.setup-complete-bar {
+    display: flex;
+}
+
+.setup-complete-bar p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.setup-guide-process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 8px 12px 8px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.card-body {
+    display: flex;
+    gap: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-content-button #btn-primary {
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: var(--white);
+    background-color: #404040;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-content-button #btn-transparent {
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #323232;
+    border: none;
+}
+
+.card-content-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #303030;
+    cursor: pointer;
+}
+
+.card-content-description {
+    font-size: 13px;
+    color: var(--font-mid);
+    font-weight: 500;
+}
+
+
+/* icon-links */
+/* https://crushingit.tech/hackathon-assets/icon-arrow-down.svg
+
+https://crushingit.tech/hackathon-assets/icon-arrow-up.svg
+
+https://crushingit.tech/hackathon-assets/icon-cross.svg
+
+https://crushingit.tech/hackathon-assets/icon-store.svg
+
+https://crushingit.tech/hackathon-assets/shopify-icon.svg
+
+https://crushingit.tech/hackathon-assets/icon-spinner.svg
+
+https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg
+
+https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg
+
+https://crushingit.tech/hackathon-assets/icon-filter.svg
+
+https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg */
