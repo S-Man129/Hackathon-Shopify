@@ -10,7 +10,7 @@ About Shopify
 Shopify is a user-friendly e-commerce platform that helps small businesses build an online store and sell online through one streamlined dashboard. As a business, they strive to provide great user experiences to all their users, including keyboard-only users, visually impaired users
 
 
-**Technology Used:**
+**Technologies Used:**
 HTML 
 CSS 
 Vanilla JavaScript
